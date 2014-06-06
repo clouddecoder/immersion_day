@@ -1,11 +1,15 @@
-""" This script is used to set up accounts for students attending the Immersion Day class.
+""" This script is used to set up and remove accounts for students attending the Immersion Day class.
 Requirements:
     Python 2.7.x   This script does not work with Python 3.
     AWS SDK for Python (Boto) v.2.29.1 or higher.  http://aws.amazon.com/sdkforpython/
     AWS Credential need to be configured as described in the "Configuring Boto Credentials" here: http://boto.readthedocs.org/en/latest/getting_started.html#configuring-boto-credentialsa
     This script expects a .csv file that contains the usernames and passwords of the users you want to create.
     The script will stop if it encounters a user that already exists in IAM.
-        
+
+    Usage:
+        python create_users.py create
+        python create_users.py delete
+
 """
 
 import csv
